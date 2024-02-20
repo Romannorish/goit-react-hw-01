@@ -1,0 +1,30 @@
+.itemFriends{
+    max-width: 120px;
+    margin-left: 30px;
+    border-radius: 10px;
+    border: 2px solid black;
+    list-style: none;
+}
+
+@media (max-width: 820px) {
+    .itemFriends{
+        margin-top: 15px;
+    }
+}
+
+.contFrends{
+   padding: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    
+}
+
+.online{
+    color: green;
+}
+
+.offline{
+    color: red;
+}
