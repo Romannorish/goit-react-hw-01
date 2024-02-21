@@ -4,7 +4,7 @@ export default function TransactionHistory ({items}) {
   return (
     <div className={css.tableContainer}>
      <table>
-  <thead>
+  <thead className={css.table}>
     <tr>
       <th>Type</th>
       <th>Amount</th>
@@ -12,7 +12,7 @@ export default function TransactionHistory ({items}) {
     </tr>
   </thead>
 {items.map(({id,type,amount,currency})=> (
-    <tbody key={id} className={css.tr}>
+    <tbody key={id}>
     <tr >
       <td>{type}</td>
       <td>{amount}</td>
