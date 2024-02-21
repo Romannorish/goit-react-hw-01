@@ -1,7 +1,9 @@
+// components
 import Profile from './Profile/Profile'
 import FriendList from './FriendList/FriendList'
 import TransactionHistory from './TransactionHistory/TransactionHistory'
 
+// data 
 import userData from './Data/userData.json'
 import friends from './Data/friends.json'
 import transactions from './Data/transactions.json'
