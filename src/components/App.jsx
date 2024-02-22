@@ -9,6 +9,7 @@ import friends from './Data/friends.json'
 import transactions from './Data/transactions.json'
 
 
+
 function App() {
 
   return (
@@ -21,7 +22,9 @@ function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
-      <FriendList friends={friends}/>
+      <FriendList
+      
+      friends={friends}/>
       <TransactionHistory items={transactions}/>
     </>
   )
