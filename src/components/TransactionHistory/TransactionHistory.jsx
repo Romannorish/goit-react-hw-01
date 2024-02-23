@@ -1,28 +1,39 @@
-import css from './TransactionHistory.module.css'
+import PropTypes from "prop-types";
 
-export default function TransactionHistory ({items}) {
+import css from "./TransactionHistory.module.css";
+
+export default function TransactionHistory({ items }) {
   return (
     <div className={css.transactionHistory}>
-     <table>
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Amount</th>
-      <th>Currency</th>
-    </tr>
-  </thead>
-{items.map(({id,type,amount,currency}) => (
-    <tbody key={id}>
-    <tr >
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
-    </tr>
-  </tbody>
-))}
-  
-</table>
+      <table>
+        <thead>
+          <tr>
+            <th className={css.transacTh}>Type</th>
+            <th className={css.transacTh}>Amount</th>
+            <th className={css.transacTh}>Currency</th>
+          </tr>
+        </thead>
+        <tbody>
+          {items.map(({ id, type, amount, currency }) => (
+            <tr key={id}>
+              <td className={css.transacTd}>{type}</td>
+              <td className={css.transacTd}>{amount}</td>
+              <td className={css.transacTd}>{currency}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
-  )
+  );
 }
 
+TransactionHistory.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
+};

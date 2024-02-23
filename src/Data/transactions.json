@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "type": "invoice",
+    "amount": "964.82",
+    "currency": "LRD"
+  },
+  {
+    "id": "2",
+    "type": "payment",
+    "amount": "686.50",
+    "currency": "WST"
+  },
+  {
+    "id": "3",
+    "type": "invoice",
+    "amount": "828.62",
+    "currency": "UGX"
+  },
+  {
+    "id": "4",
+    "type": "withdrawal",
+    "amount": "527.80",
+    "currency": "ALL"
+  },
+  {
+    "id": "5",
+    "type": "payment",
+    "amount": "862.44",
+    "currency": "AUD"
+  },
+  {
+    "id": "6",
+    "type": "withdrawal",
+    "amount": "907.00",
+    "currency": "GEL"
+  },
+  {
+    "id": "7",
+    "type": "deposit",
+    "amount": "103.10",
+    "currency": "BWP"
+  },
+  {
+    "id": "8",
+    "type": "withdrawal",
+    "amount": "322.32",
+    "currency": "MRO"
+  },
+  {
+    "id": "9",
+    "type": "invoice",
+    "amount": "14.79",
+    "currency": "PYG"
+  }
+]
